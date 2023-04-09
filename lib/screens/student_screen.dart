@@ -20,13 +20,15 @@ class _StudentScreenState extends State<StudentScreen> {
 
     setState(() {
       _scanBarcode = barcodeScanRes;
-      print("The output is" + _scanBarcode);
     });
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: const Text('Lessons'),
+      ),
       body: Center(
         child: ElevatedButton(
           onPressed: () async {
@@ -34,7 +36,10 @@ class _StudentScreenState extends State<StudentScreen> {
             await scanBarcodeNormal();
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) =>  WebViewScreen(url: _scanBarcode,)),
+              MaterialPageRoute(
+                  builder: (context) => WebViewScreen(
+                        url: _scanBarcode,
+                      )),
             );
           },
           child: const Text('Scan'),
