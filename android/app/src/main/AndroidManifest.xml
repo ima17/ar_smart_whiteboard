@@ -1,5 +1,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.ar_smart_whiteboard">
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-feature android:name="android.hardware.camera"/>
+     <uses-feature android:name="android.hardware.sensor"/>
+    <uses-feature android:name="android.hardware.sensor.accelerometer" android:required="true" />
    <application
         android:label="ar_smart_whiteboard"
         android:name="${applicationName}"
