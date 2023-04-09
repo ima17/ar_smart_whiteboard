@@ -20,18 +20,57 @@ class HomeScreen extends StatelessWidget {
                       builder: (context) => const StudentScreen()),
                 );
               },
-              child: const Text('Student'),
+              style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all<Color>(
+                  Colors.blue,
+                ),
+                shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                  RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(30.0),
+                  ),
+                ),
+                padding: MaterialStateProperty.all<EdgeInsets>(
+                  const EdgeInsets.symmetric(horizontal: 40, vertical: 20),
+                ),
+                elevation: MaterialStateProperty.all<double>(5),
+              ),
+              child: const Padding(
+                padding: EdgeInsets.all(15.0),
+                child: Text(
+                  'Student',
+                  style: TextStyle(fontSize: 20.0),
+                ),
+              ),
             ),
             const SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(
-                      builder: (context) => TeachersScreen()),
+                  MaterialPageRoute(builder: (context) => TeachersScreen()),
                 );
               },
-              child: const Text('Teacher'),
+              style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all<Color>(
+                  Colors.orange,
+                ),
+                shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                  RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(30.0),
+                  ),
+                ),
+                padding: MaterialStateProperty.all<EdgeInsets>(
+                  const EdgeInsets.symmetric(horizontal: 40, vertical: 20),
+                ),
+                elevation: MaterialStateProperty.all<double>(5),
+              ),
+              child: const Padding(
+                padding: EdgeInsets.all(15.0),
+                child: Text(
+                  'Teacher',
+                  style: TextStyle(fontSize: 20.0),
+                ),
+              ),
             ),
           ],
         ),

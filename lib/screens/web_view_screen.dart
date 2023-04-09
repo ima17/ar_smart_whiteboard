@@ -27,8 +27,8 @@ class _WebViewScreenState extends State<WebViewScreen> {
   }
 
   Future<void> requestPermissions() async {
-    var status1 = await Permission.camera.request();
-    var status2 = await Permission.sensors.request();
+    await Permission.camera.request();
+    await Permission.sensors.request();
   }
 
   @override
