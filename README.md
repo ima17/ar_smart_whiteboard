@@ -1,16 +1,23 @@
-# ar_smart_whiteboard
+<h1>AR Smart Whiteboard</h1>
 
-A new Flutter project.
+<p>This is a Flutter mobile application that utilizes augmented reality (AR) technology to create a virtual whiteboard that can be used for presentations, lectures, and brainstorming sessions.</p>
 
-## Getting Started
+<h2>Features</h2>
+<ul>
+  <li>AR-based whiteboard that can be projected onto any flat surface</li>
+</ul>
 
-This project is a starting point for a Flutter application.
+<h2>Technologies Used</h2>
+<ul>
+  <li>Flutter framework for the mobile app development</li>
+  <li>Zappar for the augmented reality functionality</li>
+</ul>
 
-A few resources to get you started if this is your first Flutter project:
+<h2>Getting Started</h2>
+<p>To run the app on your local machine, follow these steps:</p>
+<ol>
+  <li>Clone the repository: <code>git clone https://github.com/ima17/ar_smart_whiteboard.git</code></li>
+  <li>Install the dependencies: <code>flutter pub get</code></li>
+  <li>Run the app: <code>flutter run</code></li>
+</ol>
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
