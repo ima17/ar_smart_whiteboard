@@ -7,7 +7,7 @@
      <uses-feature android:name="android.hardware.sensor"/>
     <uses-feature android:name="android.hardware.sensor.accelerometer" android:required="true" />
    <application
-        android:label="ar_smart_whiteboard"
+        android:label="AR Smart Whiteboard"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
