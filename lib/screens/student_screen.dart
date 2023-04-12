@@ -69,109 +69,115 @@ class _StudentScreenState extends State<StudentScreen> {
               style: TextStyle(fontSize: 18.0),
             ),
             const SizedBox(height: 20.0),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                ElevatedButton(
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => const WebViewScreen(
-                                url: "https://webxr.run/pVb8l40Q2YeQx",
-                              )),
-                    );
-                  },
-                  style: ButtonStyle(
-                    backgroundColor: MaterialStateProperty.all<Color>(
-                      Colors.green,
-                    ),
-                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                      RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(30.0),
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const WebViewScreen(
+                                  url: "https://webxr.run/pVb8l40Q2YeQx",
+                                )),
+                      );
+                    },
+                    style: ButtonStyle(
+                      backgroundColor: MaterialStateProperty.all<Color>(
+                        Colors.green,
                       ),
-                    ),
-                  ),
-                  child: const Text(
-                    'Lesson 1',
-                    style: TextStyle(fontSize: 16.0),
-                  ),
-                ),
-                ElevatedButton(
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => const WebViewScreen(
-                                url: "https://webxr.run/XV6EWZgwGGvQr",
-                              )),
-                    );
-                  },
-                  style: ButtonStyle(
-                    backgroundColor: MaterialStateProperty.all<Color>(
-                      Colors.red,
-                    ),
-                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                      RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(30.0),
-                      ),
-                    ),
-                  ),
-                  child: const Text(
-                    'Lesson 2',
-                    style: TextStyle(fontSize: 16.0),
-                  ),
-                ),
-                ElevatedButton(
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => const WebViewScreen(
-                                url: "https://webxr.run/rl9zpbY35avOb",
-                              )),
-                    );
-                  },
-                  style: ButtonStyle(
-                    backgroundColor: MaterialStateProperty.all<Color>(
-                      Colors.purple,
-                    ),
-                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                      RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(30.0),
-                      ),
-                    ),
-                  ),
-                  child: const Text(
-                    'Lesson 3',
-                    style: TextStyle(fontSize: 16.0),
-                  ),
-                ),
-                ElevatedButton(
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => const WebViewScreen(
-                                url: "https://webxr.run/v6YQnMRQa6EZy",
-                              )),
-                    );
-                  },
-                  style: ButtonStyle(
-                    backgroundColor: MaterialStateProperty.all<Color>(
-                      Colors.orange,
-                    ),
-                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                      shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                         RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(30),
-                    )),
+                          borderRadius: BorderRadius.circular(30.0),
+                        ),
+                      ),
+                    ),
+                    child: const Text(
+                      'Lesson 1',
+                      style: TextStyle(fontSize: 16.0),
+                    ),
                   ),
-                  child: const Text(
-                    'Lesson 4',
-                    style: TextStyle(fontSize: 16.0),
+                  const SizedBox(width: 5.0),
+                  ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const WebViewScreen(
+                                  url: "https://webxr.run/XV6EWZgwGGvQr",
+                                )),
+                      );
+                    },
+                    style: ButtonStyle(
+                      backgroundColor: MaterialStateProperty.all<Color>(
+                        Colors.red,
+                      ),
+                      shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                        RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(30.0),
+                        ),
+                      ),
+                    ),
+                    child: const Text(
+                      'Lesson 2',
+                      style: TextStyle(fontSize: 16.0),
+                    ),
                   ),
-                ),
-              ],
+                  const SizedBox(width: 5.0),
+                  ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const WebViewScreen(
+                                  url: "https://webxr.run/rl9zpbY35avOb",
+                                )),
+                      );
+                    },
+                    style: ButtonStyle(
+                      backgroundColor: MaterialStateProperty.all<Color>(
+                        Colors.purple,
+                      ),
+                      shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                        RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(30.0),
+                        ),
+                      ),
+                    ),
+                    child: const Text(
+                      'Lesson 3',
+                      style: TextStyle(fontSize: 16.0),
+                    ),
+                  ),
+                  const SizedBox(width: 5.0),
+                  ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const WebViewScreen(
+                                  url: "https://webxr.run/v6YQnMRQa6EZy",
+                                )),
+                      );
+                    },
+                    style: ButtonStyle(
+                      backgroundColor: MaterialStateProperty.all<Color>(
+                        Colors.orange,
+                      ),
+                      shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                          RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(30),
+                      )),
+                    ),
+                    child: const Text(
+                      'Lesson 4',
+                      style: TextStyle(fontSize: 16.0),
+                    ),
+                  ),
+                ],
+              ),
             ),
           ],
         ),
