@@ -35,15 +35,16 @@ class _StudentScreenState extends State<StudentScreen> {
           children: [
             ElevatedButton(
               onPressed: () async {
-                BuildContext context = this.context;
                 await scanBarcodeNormal();
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => WebViewScreen(
-                            url: _scanBarcode,
-                          )),
-                );
+                if (_scanBarcode != "-1") {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => WebViewScreen(
+                              url: _scanBarcode,
+                            )),
+                  );
+                }
               },
               style: ButtonStyle(
                 backgroundColor: MaterialStateProperty.all<Color>(
