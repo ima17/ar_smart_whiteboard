@@ -3,7 +3,12 @@ import 'package:flutter/material.dart';
 class MainButton extends StatelessWidget {
   final VoidCallback? onPressed;
   final String label;
-  const MainButton({Key? key, required this.onPressed, required this.label})
+  final Color bgColor;
+  const MainButton(
+      {Key? key,
+      required this.onPressed,
+      required this.label,
+      required this.bgColor})
       : super(key: key);
 
   @override
@@ -12,7 +17,7 @@ class MainButton extends StatelessWidget {
       onPressed: onPressed,
       style: ButtonStyle(
         backgroundColor: MaterialStateProperty.all<Color>(
-          Colors.orange,
+          bgColor,
         ),
         shape: MaterialStateProperty.all<RoundedRectangleBorder>(
           RoundedRectangleBorder(

@@ -36,19 +36,21 @@ class _StudentScreenState extends State<StudentScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             MainButton(
-                onPressed: () async {
-                  await scanBarcodeNormal();
-                  if (_scanBarcode != "-1") {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => WebViewScreen(
-                                url: _scanBarcode,
-                              )),
-                    );
-                  }
-                },
-                label: "Scan"),
+              onPressed: () async {
+                await scanBarcodeNormal();
+                if (_scanBarcode != "-1") {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => WebViewScreen(
+                              url: _scanBarcode,
+                            )),
+                  );
+                }
+              },
+              label: "Scan",
+              bgColor: Colors.orange,
+            ),
             const SizedBox(height: 20.0),
             const Text(
               'OR',

@@ -22,6 +22,7 @@ class HomeScreen extends StatelessWidget {
                       builder: (context) => const StudentScreen()),
                 );
               },
+              bgColor: Colors.orange,
             ),
             const SizedBox(height: 20),
             MainButton(
@@ -32,6 +33,7 @@ class HomeScreen extends StatelessWidget {
                   MaterialPageRoute(builder: (context) => TeachersScreen()),
                 );
               },
+              bgColor: Colors.blue,
             ),
           ],
         ),
