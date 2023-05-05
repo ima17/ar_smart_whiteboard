@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class MainButton extends StatelessWidget {
-  final Function onPressed;
+  final VoidCallback? onPressed;
   final String label;
   const MainButton({Key? key, required this.onPressed, required this.label})
       : super(key: key);
@@ -9,12 +9,7 @@ class MainButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
-      onPressed: () {
-        Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => onPressed()),
-        );
-      },
+      onPressed: onPressed,
       style: ButtonStyle(
         backgroundColor: MaterialStateProperty.all<Color>(
           Colors.orange,
