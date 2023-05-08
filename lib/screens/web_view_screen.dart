@@ -63,7 +63,7 @@ class _WebViewScreenState extends State<WebViewScreen> {
           if (_progress < 1.0)
             LinearProgressIndicator(
               value: _progress,
-              color: Colors.blue,
+              color: Colors.orange,
               backgroundColor: Colors.grey[300],
             ),
         ],
